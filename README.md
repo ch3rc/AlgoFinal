@@ -1,4 +1,4 @@
-#Depth First Search Wikipedia Webcrawler
+#Breadth First Search Wikipedia Webcrawler
 ___
 ##Needed To Run
 ___
@@ -20,7 +20,7 @@ ___
 - search word if found at a depth of 6 or lower will be plotted from origin to search word in a graph
 - It is best to use words that are closely related as a wait is used for the page traversal to allow HTML elements on the page to load
 - I used Car for the start word and Vehicle for the search word which traversed around 220 links and it takes around 5-10 minutes to run
-- If the word is not found within 1000 links, the visited links will have to be adjusted accordingly in wiki_crawler.py in DFS method of the crawler class
+- If the word is not found within 1000 links, the visited links will have to be adjusted accordingly in wiki_crawler.py in BFS method of the crawler class
 - Currently the program is running on a headless driver, to watch the program traverse remove the options portion in the init method in the crawler class
 ___
 ##Example Ouput

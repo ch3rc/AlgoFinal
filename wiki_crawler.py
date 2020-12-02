@@ -62,7 +62,7 @@ class Crawler:
                 except Exception as err:
                     print(f"Error has occurred with URL: {url_actual} : {err}")
 
-    def DFS(self):
+    def BFS(self):
         visited = []
         # may need to adjust links visited for certain searches
         while len(self.urls) != 0 and len(visited) < 1000:
@@ -176,7 +176,7 @@ def main():
         G = Graph(start_word, word_to_find)
         crawl = Crawler(PATH, start_word, word_to_find, G)
         crawl.start_crawl()
-        crawl.DFS()
+        crawl.BFS()
         G.show_graph()
     except Exception as err:
         print(f"Error has occurred {err}")
